@@ -5,9 +5,9 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
   <script>
   $(window).scroll(function() {
-    var bottom_of_window = $(window).scrollTop() + $(window).height()-100;
+    var bottom_of_window = $(window).scrollTop() + $(window).height();
     $('.fade').each(function(){
-      var bottom_of_object = $('img').position().top + $('.img').outerHeight();
+      var bottom_of_object = $(this).position().top + $(this).outerHeight();
       if (bottom_of_window > bottom_of_object) {
         if ($(this).css("opacity")==0) {$(this).fadeTo(700,1);}
        } else {
@@ -27,11 +27,9 @@
     </p>
   </div>
   <div class="parallax" id="second"></div>
-  <div class="languages">
+  <div class="languages fade">
     <h2>Languages</h2>
-    <div class='fade'>
     <img src="images/mainLG2.png">
-  </div>
   </div>
 </body>
 </html>
