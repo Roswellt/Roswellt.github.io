@@ -30,7 +30,6 @@ body, html{
 
 .slide{
   opacity: 0;
-  width: 100%;
 }
 
 .parallax {
@@ -82,7 +81,7 @@ body, html{
   margin-right: 10%;
 }
 
-.fade ul {
+.programming ul {
   display: inline-block;
   width: 45%;
 }
