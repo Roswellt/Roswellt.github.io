@@ -2,12 +2,35 @@ body, html{
   height: 100%;
 }
 
+.nav {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #4F575B;
+}
+.nav li a {
+  float: left;
+  padding: 1% 2%;
+  text-decoration: none;
+  color: white;
+}
+.nav li a:hover {
+  background-color: #B2B2B2;
+}
+
 .centered {
   text-align: center;
 }
 
 .fade{
   opacity:0;
+}
+
+.slide{
+  opacity: 0;
+  width: 100%;
 }
 
 .parallax {
@@ -23,12 +46,6 @@ body, html{
  * http://animista.net
  * T: @cssanimista
  * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation slide-in-left
- * ----------------------------------------
- */
 
 @keyframes slide-in-left {
   0% {
@@ -51,12 +68,13 @@ body, html{
     background-image: url(images/pineapple.jpg);
 }
 #second{
-  background-image: url(images/stars.jpg);
+  height: 40%;
+  background-image: url(images/laptop2.jpg);
 }
 .info {
   text-align: center;
   background-color: white;
-  padding: 3% 0%;
+  padding: 2% 0%;
 }
 
 .info p{
@@ -64,7 +82,17 @@ body, html{
   margin-right: 10%;
 }
 
-ul {
+.fade ul {
   display: inline-block;
   width: 45%;
+}
+
+.flex {
+  flex-grow: 1;
+}
+
+.black-bar {
+  height: 50px;
+  width: 100%;
+  background-color: black;
 }
