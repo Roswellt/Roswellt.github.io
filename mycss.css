@@ -1,4 +1,5 @@
 body, html{
+  margin: 0;
   height: 100%;
 }
 
@@ -94,4 +95,8 @@ body, html{
   height: 50px;
   width: 100%;
   background-color: black;
+}
+
+.projects {
+  background-color: #00FFCC;
 }
