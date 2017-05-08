@@ -2,7 +2,7 @@ body, html{
   height: 100%;
 }
 
-.name {
+.centered {
   text-align: center;
 }
 
@@ -34,6 +34,7 @@ body, html{
   margin-right: 10%;
 }
 
-.languages {
-  text-align: center;
+ul {
+  width: 40%;
+  float: left;
 }
