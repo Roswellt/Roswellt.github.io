@@ -11,13 +11,14 @@ body, html{
   overflow: hidden;
   background-color: #4F575B;
 }
-.nav li a {
+.nav li  {
   float: left;
   padding: 1% 2%;
   text-decoration: none;
   color: white;
+  cursor: pointer;
 }
-.nav li a:hover {
+.nav li:hover {
   background-color: #B2B2B2;
 }
 
@@ -71,6 +72,10 @@ body, html{
   height: 40%;
   background-image: url(images/laptop2.jpg);
 }
+#third{
+  width: 100%;
+  height: 198px;
+}
 .info {
   text-align: center;
   background-color: white;
@@ -97,6 +102,6 @@ body, html{
   background-color: black;
 }
 
-.projects {
-  background-color: #00FFCC;
+.side-projects {
+  background-color: #D6D6D6;
 }
