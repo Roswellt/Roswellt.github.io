@@ -92,16 +92,37 @@ body, html{
   width: 45%;
 }
 
-.flex {
-  flex-grow: 1;
-}
-
 .black-bar {
   height: 50px;
   width: 100%;
   background-color: black;
 }
 
-.side-projects {
-  background-color: #D6D6D6;
+.back-to-top p {
+  text-decoration: underline;
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+}
+
+@keyframes hvr-buzz {
+  50% {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+  100% {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+.back-to-top:hover{
+  cursor: pointer;
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
 }
