@@ -77,6 +77,7 @@ body, html{
   height: 198px;
 }
 .info {
+  display: table;
   text-align: center;
   background-color: white;
   padding: 2% 0%;
@@ -87,9 +88,14 @@ body, html{
   margin-right: 10%;
 }
 
-.programming ul {
-  display: inline-block;
-  width: 45%;
+.programming {
+  display: table;
+}
+
+.languages {
+  display: table;
+  text-align: center;
+  width: 100%;
 }
 
 .black-bar {
@@ -100,6 +106,27 @@ body, html{
 
 .back-to-top {
   text-decoration: underline;
+}
+
+.vertical-centered {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.white-background {
+  background-color: white;
+  height: 300px;
+  font-size: 1.8em;
+}
+
+.grey-background {
+  background-color: #ededed;
+  height: 300px;
+  font-size: 1.5em;
+}
+
+.programming ul {
+  font-size: 1em;
 }
 
 @keyframes hvr-buzz {
