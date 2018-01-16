@@ -1,5 +1,10 @@
+body, html{
+  margin: 0;
+  height: 100%;
+}
+
 .jumbotron {
-  background-color: white;
+  background-color: #ededed;
   text-align: center;
 }
 
@@ -10,9 +15,12 @@
   margin: 0;
 }
 
-/* Nav search button css */
-#nav-search {
-  width: 300px;
+.navbar {
+  margin-bottom: 0;
+}
+
+.navbar-nav {
+  float: right;
 }
 
 .space {
@@ -23,4 +31,39 @@
 .space-medium {
   width: 100%;
   margin-top: 5%;
+}
+
+h2 {
+  padding-bottom: 30px;
+  font-size: 3em;
+}
+
+/* Parallax CSS */
+.parallax {
+  height: 70%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#first{
+  height: 40%;
+  background-image: url(images/laptop2.jpg);
+}
+
+/* Preface CSS */
+.preface p {
+  font-size: 1.5em;
+  height: 150px;
+}
+
+/* Programming CSS */
+.programming h2 {
+  text-align: center;
+}
+
+.programming li {
+  padding-bottom: 30px;
+  font-size: 1.5em;
 }
