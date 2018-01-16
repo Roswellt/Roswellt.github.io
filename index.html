@@ -1,92 +1,41 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <title>BOOKY</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="mycss.css">
-  <script type="text/javascript"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-  <!--Fades in elements on scroll down> -->
-  $(document).ready(function(){
-    $(window).scroll(function() {
-      var bottom_of_window = $(window).scrollTop() + $(window).height()+100;
-      $('.slide').each(function(){
-        var bottom_of_object = $(this).position().top + $(this).outerHeight();
-        if (bottom_of_window > bottom_of_object){
-          $(this).addClass('slide-in-left');
-        }
-      });
-    });
-  });
-  </script>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+  <meta charset="utf-8" />
 </head>
+
 <body>
-  <div>
-    <ul class="nav">
-      <li id="programming">Programming</a></li>
-      <li id="experience">Work Experience</a></li>
-      <li id="side-projects">Side Projects</a></li>
-    </ul>
-  </div>
-  <div class="parallax" id="first"></div>
-  <div class="info white-background">
-    <span class="vertical-centered">
-      <p>Hi, my name is Quang-Tri and I am a student at the University of Ottawa studying Software Engineering. I am an experienced Java programmer with knowledge in both Python and C++. I have a strong desire to improve my programming and motivated to learn as much as I can.
-      </p>
-    </span>
-  </div>
-  <!-- <div class="parallax" id="second"></div> -->
-  <div class="programming grey-background">
-    <span class="vertical-centered">
-      <h1 class="centered">Programming</h1>
-      <ul>
-        <li>Efficient coding ability in Java and Python as well as good knowledge of C++, HTML/CSS, and Javascript/Jquery</li>
-        <li>Java: 3 years of programming experience including work experience. Knowledgeable in concepts and applications of classes, inheritance and objects</li>
-        <li>Working understanding of the MVC software pattern</li>
-        <li>Critical thinking and problem solving when planning a program</li>
-        <li>Ability to analyze an algorithm's O-notation / complexity</li>
-      </ul>
-    </span>
-  </div>
-  <div class="black-bar"></div>
-  <div class="parallax" id="second"></div>
-  <div class="black-bar"></div>
-  <div class="languages white-background">
-    <span class="vertical-centered">
-      <h1>Languages</h1>
-      <img src="images/mainLG2.png">
-    </span>
-  </div>
-  <div>
-    <div class="grey-background experience">
-      <h2 class="centered">Work Experience</h2>
-      <ul>
-        <li>Managed virtual machines on the mainframe to keep them up to date using software and Linux</li>
-        <li>Maintained and developed patches for a financial application in Java while working for the Canada Revenue Agency</li>
-        <li>Applied my knowledge of the MVC software architectural pattern while working on the application</li>
-        <li>Developed acceptance tests for the application using the fitnesse framework</li>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">BOOKY</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
       </ul>
     </div>
-  </div>
-  <div class="centered">
-    <div class="back-to-top" style="display: inline-block">Back To Top</div>
+  </nav>
+  <div class="jumbotron">
+    <h1>Quang-Tri Do</h1>
+    <p>My Resume</p>
   </div>
 
-  <script>
-  $("#programming").click(function(){
-    //alert($(".programming").position().top + " "+ $(window).scrollTop());
-    $('body, html').animate({scrollTop:$(".programming").offset().top},700);
-  });
-  $("#experience").click(function(){
-    //alert($(".programming").position().top + " "+ $(window).scrollTop());
-    $('body, html').animate({scrollTop:$(".experience").offset().top},700);
-  });
-  $("#side-projects").click(function(){
-    //alert($(".programming").position().top + " "+ $(window).scrollTop());
-    $('body, html').animate({scrollTop:$(".side-projects").offset().top},700);
-  });
-  $('.back-to-top').click(function(){
-    $('body, html').animate({scrollTop:$('.nav').offset().top}, 700);
-  })
-  </script>
+  <div class="space-medium"></div>
+
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
+
+
 </html>
