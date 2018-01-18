@@ -95,3 +95,32 @@ h3 {
 .side-projects img {
   max-width: 100%;
 }
+
+.image-wrapper {
+  position: relative;
+}
+
+.image-wrapper .image-caption {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  background-color: black;
+  height: 400px;
+  width: 400px;
+  opacity: 0;
+}
+
+.image-wrapper .image-caption:hover {
+  opacity: .7;
+}
+
+.image-wrapper .project-title {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+}
+
+.image-wrapper .project-title p {
+  color: white;
+}
