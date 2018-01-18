@@ -1,4 +1,4 @@
-body, html{
+body, html {
   margin: 0;
   height: 100%;
 }
@@ -38,7 +38,14 @@ h2 {
   font-size: 3em;
 }
 
+h3 {
+  padding-bottom: 20px;
+  font-size: 2.25em;
+}
+
+
 /* Parallax CSS */
+
 .parallax {
   height: 70%;
   background-attachment: fixed;
@@ -47,18 +54,22 @@ h2 {
   background-size: cover;
 }
 
-#first{
+#first {
   height: 40%;
   background-image: url(images/laptop2.jpg);
 }
 
+
 /* Preface CSS */
+
 .preface p {
   font-size: 1.5em;
   height: 150px;
 }
 
+
 /* Programming CSS */
+
 .programming h2 {
   text-align: center;
 }
@@ -66,4 +77,21 @@ h2 {
 .programming li {
   padding-bottom: 30px;
   font-size: 1.5em;
+}
+
+
+/* Side projects CSS */
+
+.side-projects {
+  background-color: #ededed;
+  width: 100%;
+}
+
+.side-projects h2 {
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.side-projects img {
+  max-width: 100%;
 }
