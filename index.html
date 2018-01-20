@@ -5,6 +5,7 @@
   <title>Resume</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="mycss.css">
+  <link rel="stylesheet" type="text/css" href="tipped.css">
   <meta charset="utf-8" />
 </head>
 
@@ -28,7 +29,8 @@
 
   <div class="container preface text-center">
     <h2>Preface</h2>
-    <p>Hi, my name is Quang-Tri and I am a student at the University of Ottawa studying Software Engineering. I am an experienced Java programmer with knowledge in both Python and C++. I have a strong desire to improve my programming and motivated to learn as much as I can.
+    <p>Hi, my name is Quang-Tri and I am a student at the University of Ottawa studying Software Engineering. I am an experienced Java programmer with knowledge in both Python and C++. I have a strong desire to improve my programming and motivated to learn
+      as much as I can.
     </p>
   </div>
 
@@ -54,22 +56,66 @@
           <div class="center-block image-caption">
             <div class="center-block project-title">
               <p>Bus Tester</p>
+              <p class="caption-button" data-toggle="modal" data-target="#bustexter-modal">Info</p>
             </div>
           </div>
         </div>
       </div>
       <div class="col-md-6">
-        <img class="center-block" src="images/Automify.png"/>
+        <div class="image-wrapper">
+          <img class="center-block" src="images/Automify.png" />
+          <div class="center-block image-caption">
+            <div class="center-block project-title">
+              <p>Automify</p>
+              <p class="caption-button" data-toggle="modal" data-target="#automify-modal">Info</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
+  <!-- Bus texter Modal -->
+  <div class="modal fade" id="bustexter-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Bus Texter</h4>
+        </div>
+        <div class="modal-body">
+          <p>A python tool that texts which bus number and route to take to get from location to destination to your mobile number.</p>
+          <p>Built using the GMail and Google maps API. The Google maps API is used to get a bus route from location to destination, which is then formatted into a readable output</p>
+          <p>The GMail API receives incoming mobile texts with location and destination specified, and then sends the Google maps results through an email which is sent as a mobile text</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Automify Modal -->
+  <div class="modal fade" id="automify-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title">Automify</h4>
+        </div>
+        <div class="modal-body">
+          <p>Developed with a group of friends during the future of work hackathon.</p>
+          <p>A chrome extension that displays the likelihood of automation of a job posting on the Indeed search engine. Built using Python, HTML, CSS, and JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
   <!-- Latest compiled JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script type="text/javascript" src="main.js"></script>
+  <script type="text/javascript" src="tipped.js"></script>
 
 </body>
 

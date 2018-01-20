@@ -43,7 +43,6 @@ h3 {
   font-size: 2.25em;
 }
 
-
 /* Parallax CSS */
 
 .parallax {
@@ -59,14 +58,12 @@ h3 {
   background-image: url(images/laptop2.jpg);
 }
 
-
 /* Preface CSS */
 
 .preface p {
   font-size: 1.5em;
   height: 150px;
 }
-
 
 /* Programming CSS */
 
@@ -78,7 +75,6 @@ h3 {
   padding-bottom: 30px;
   font-size: 1.5em;
 }
-
 
 /* Side projects CSS */
 
@@ -113,14 +109,37 @@ h3 {
 
 .image-wrapper .image-caption:hover {
   opacity: .7;
+  -webkit-transition: opacity 0.35s;
 }
 
 .image-wrapper .project-title {
   position: absolute;
   top: 50%;
+  width: 100%;
+  text-align: center;
   font-size: 2em;
 }
 
 .image-wrapper .project-title p {
   color: white;
+}
+
+/* Project image caption CSS */
+
+.caption-button {
+  font-family: georgia;
+  margin: 0px 30% 0px 30%;
+  border-style: solid;
+  border-width: 2px;
+  border-color: white;
+}
+
+.caption-button:hover {
+  cursor: pointer;
+}
+
+/* Modal CSS */
+.modal-title {
+  text-align: center;
+  font-size: 2em;
 }
