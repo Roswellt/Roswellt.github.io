@@ -17,6 +17,8 @@ body, html {
 
 .navbar {
   margin-bottom: 0;
+  border-radius: 0px;
+  background-color: #3c3c3c;
 }
 
 .navbar-nav {
@@ -142,4 +144,12 @@ h3 {
 .modal-title {
   text-align: center;
   font-size: 2em;
+}
+
+.modal-image {
+  width: 100%;
+}
+
+.modal-body p {
+  margin-bottom: 6%;
 }
