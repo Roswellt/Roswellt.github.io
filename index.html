@@ -5,30 +5,20 @@
   <title>Resume</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="mycss.css">
-  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w"
+    crossorigin="anonymous">
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html">Quang-Tri Do</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li>
-          <a id="programming" href="#">Programming</a>
-        </li>
-        <li>
-          <a id="work-experience" href="#">Work Experience</a>
-        </li>
-        <li>
-          <a id="side-projects" href="#">Side Projects</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+
+  <div id="mySidenav" class="sidenav">
+      <a id="main-navbar" href="#">Resume</a>
+    <a id="programming" href="#">Programming</a>
+    <a id="side-projects" href="#">Side Projects</a>
+    <a id="work-experience" href="#">Work Experience</a>
+  </div>
 
   <div class="container preface text-center">
     <h2>Preface</h2>
@@ -94,7 +84,8 @@
         </div>
         <div class="modal-body">
           <p>A python tool that texts which bus number and route to take to get from location to destination to your mobile
-            number.</p>
+            number.
+          </p>
           <p>Built using the GMail and Google maps API. The Google maps API is used to get a bus route from location to destination,
             which is then formatted into a readable output</p>
           <p>The GMail API receives incoming mobile texts with location and destination specified, and then sends the Google

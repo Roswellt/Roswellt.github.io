@@ -1,4 +1,5 @@
-body, html {
+body,
+html {
   margin: 0;
   height: 100%;
 }
@@ -45,6 +46,54 @@ h3 {
   font-size: 2.25em;
 }
 
+/* SIDE NAV BAR */
+
+.sidenav a {
+  padding: 0px 0px 20px 0px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover {
+  color: #f1f1f1;
+  background-color: #3c3c3c;
+}
+
+#main-navbar {
+  background-color: #1f8dd6;
+  color: #ffffff;
+  font-size: 25px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+ /* The sidenav */
+.sidenav {
+  height: 100%;
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+}
+
 /* Parallax CSS */
 
 .parallax {
@@ -58,6 +107,10 @@ h3 {
 #first {
   height: 40%;
   background-image: url(images/laptop2.jpg);
+}
+
+.container {
+  padding-left: 100px;
 }
 
 /* Preface CSS */
