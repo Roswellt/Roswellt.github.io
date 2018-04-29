@@ -5,9 +5,11 @@
   <title>Resume</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="mycss.css">
-  <link rel="stylesheet" type="text/css" href="tipped.css">
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
 <body>
   <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -15,21 +17,24 @@
         <a class="navbar-brand" href="index.html">Quang-Tri Do</a>
       </div>
       <ul class="nav navbar-nav">
-        <li><a id="programming" href="#">Programming</a></li>
-        <li><a id="work_experience" href="#">Work Experience</a></li>
-        <li><a id="side_projects" href="#">Side Projects</a></li>
+        <li>
+          <a id="programming" href="#">Programming</a>
+        </li>
+        <li>
+          <a id="work-experience" href="#">Work Experience</a>
+        </li>
+        <li>
+          <a id="side-projects" href="#">Side Projects</a>
+        </li>
       </ul>
     </div>
   </nav>
-  <div class="jumbotron">
-    <h1>Quang-Tri Do</h1>
-    <p>Resume</p>
-  </div>
 
   <div class="container preface text-center">
     <h2>Preface</h2>
-    <p>Hi, my name is Quang-Tri and I am a student at the University of Ottawa studying Software Engineering. I am an experienced Java programmer with knowledge in both Python and C++. I have a strong desire to improve my programming and motivated to learn
-      as much as I can.
+    <p>Hi, my name is Quang-Tri and I am a student at the University of Ottawa studying Software Engineering. I am an experienced
+      Java programmer with knowledge in both Python and C++. I have a strong desire to improve my programming and motivated
+      to learn as much as I can.
     </p>
   </div>
 
@@ -39,7 +44,8 @@
     <h2>Programming</h2>
     <ul>
       <li>Efficient coding ability in Java and Python as well as good knowledge of C++, HTML/CSS, and Javascript/Jquery</li>
-      <li>Java: 3 years of programming experience including work experience. Knowledgeable in concepts and applications of classes, inheritance and objects</li>
+      <li>Java: 3 years of programming experience including work experience. Knowledgeable in concepts and applications of classes,
+        inheritance and objects</li>
       <li>Working understanding of the MVC software pattern</li>
       <li>Critical thinking and problem solving when planning a program</li>
       <li>Ability to analyze an algorithm's O-notation / complexity</li>
@@ -81,13 +87,18 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h4 class="modal-title">Bus Texter</h4>
         </div>
         <div class="modal-body">
-          <p>A python tool that texts which bus number and route to take to get from location to destination to your mobile number.</p>
-          <p>Built using the GMail and Google maps API. The Google maps API is used to get a bus route from location to destination, which is then formatted into a readable output</p>
-          <p>The GMail API receives incoming mobile texts with location and destination specified, and then sends the Google maps results through an email which is sent as a mobile text</p>
+          <p>A python tool that texts which bus number and route to take to get from location to destination to your mobile
+            number.</p>
+          <p>Built using the GMail and Google maps API. The Google maps API is used to get a bus route from location to destination,
+            which is then formatted into a readable output</p>
+          <p>The GMail API receives incoming mobile texts with location and destination specified, and then sends the Google
+            maps results through an email which is sent as a mobile text</p>
           <div>
             <img class="modal-image" src="images/bustexter-modal.png" />
           </div>
@@ -101,13 +112,18 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
           <h4 class="modal-title">Automify</h4>
         </div>
         <div class="modal-body">
-          <p>Developed with a group of friends during the future of work hackathon. A hackathon that focuses on the future automation of work by artificial intelligence and automation.</p>
-          <p>Our project was designed to give prospective job seekers a way to easily identify the likelihood of a job being automated during their job search.</p>
-          <p>A chrome extension that displays the likelihood of automation of a job posting on the Indeed search engine. The data was taken from a dataset that was made available by the hackathon. Built using HTML, CSS, and JavaScript.</p>
+          <p>Developed with a group of friends during the future of work hackathon. A hackathon that focuses on the future automation
+            of work by artificial intelligence and automation.</p>
+          <p>Our project was designed to give prospective job seekers a way to easily identify the likelihood of a job being
+            automated during their job search.</p>
+          <p>A chrome extension that displays the likelihood of automation of a job posting on the Indeed search engine. The
+            data was taken from a dataset that was made available by the hackathon. Built using HTML, CSS, and JavaScript.</p>
           <div>
             <img class="modal-image" src="images/automify-modal.png" />
           </div>
@@ -123,7 +139,6 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
   <script type="text/javascript" src="index.js"></script>
-  <script type="text/javascript" src="tipped.js"></script>
 
 </body>
 
