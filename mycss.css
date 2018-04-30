@@ -30,17 +30,14 @@ h2 {
   padding-bottom: 30px;
   font-size: 3em;
   font-family: Georgia;
-}
-
-h3 {
-  padding-bottom: 20px;
-  font-size: 2.25em;
+  padding-bottom: 40px;
+  text-align: center;
 }
 
 .container {
   /* padding-left: 100px; */
-  padding-bottom: 100px;
-  padding-top: 100px;
+  padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 /* SIDE NAV BAR */
@@ -112,17 +109,46 @@ h3 {
 .preface p {
   font-size: 1.5em;
   height: 150px;
+  padding: 0px 70px 0px 70px;
 }
 
 /* Programming CSS */
 
-.programming h2 {
-  text-align: center;
-}
-
 .programming li {
   padding-bottom: 30px;
+  font-size: 1.2em;
+}
+.programming ul {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.programming {
+  padding-bottom: 0px; !important
+}
+
+/* Work Experience CSS */
+.job-name {
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.job-name h3 {
+  float: left;
+  margin: 0px;
   font-size: 1.5em;
+  color: #000000;
+}
+
+.work-experience p {
+  padding: 0px 250px 0px 0px;
+}
+
+.job-name h4 {
+  float: right;
+  margin: 0px;
+  font-size: 1.2em;
+  color: #585858;
 }
 
 /* Side projects CSS */
@@ -133,17 +159,13 @@ h3 {
   padding-bottom: 2%;
 }
 
-.side-projects h2 {
-  text-align: center;
-  padding-bottom: 0;
-}
-
 .side-projects img {
   max-width: 100%;
 }
 
 .image-wrapper {
   position: relative;
+  padding-bottom: 30px;
 }
 
 .image-wrapper .image-caption {
