@@ -16,16 +16,6 @@ html {
   margin: 0;
 }
 
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0px;
-  background-color: #3c3c3c;
-}
-
-.navbar-nav {
-  float: right;
-}
-
 .space {
   width: 100%;
   margin-top: 3%;
@@ -39,6 +29,7 @@ html {
 h2 {
   padding-bottom: 30px;
   font-size: 3em;
+  font-family: Georgia;
 }
 
 h3 {
@@ -46,12 +37,19 @@ h3 {
   font-size: 2.25em;
 }
 
+.container {
+  /* padding-left: 100px; */
+  padding-bottom: 100px;
+  padding-top: 100px;
+}
+
 /* SIDE NAV BAR */
 
 .sidenav a {
   padding: 0px 0px 20px 0px;
   text-decoration: none;
-  font-size: 20px;
+  font-size: 18px;
+  font-family: sans-serif;
   color: #818181;
   display: block;
   transition: 0.3s;
@@ -107,10 +105,6 @@ h3 {
 #first {
   height: 40%;
   background-image: url(images/laptop2.jpg);
-}
-
-.container {
-  padding-left: 100px;
 }
 
 /* Preface CSS */
