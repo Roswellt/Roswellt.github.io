@@ -1,2 +1,2 @@
 # Roswellt.github.io
-My resume website, WIP
+My portfolio website that I update consistently.
