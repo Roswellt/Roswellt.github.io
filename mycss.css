@@ -1,7 +1,16 @@
 body,
 html {
+  background-color: #7FE0FF;
   margin: 0;
   height: 100%;
+}
+
+h2 {
+  color: #40707F;
+}
+
+p {
+  color: #66797F;
 }
 
 .jumbotron {
@@ -40,53 +49,45 @@ h2 {
   padding-top: 60px;
 }
 
-/* SIDE NAV BAR */
-
-.sidenav a {
-  padding: 0px 0px 20px 0px;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: sans-serif;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+/* Navbar */
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px 0px 0px 0px;
+  float: right;
 }
 
-/* When you mouse over the navigation links, change their color */
-
-.sidenav a:hover {
-  color: #f1f1f1;
-  background-color: #3c3c3c;
+.navbar-item {
+  font-size: large;
+  display: inline;
+  margin-right: 20px;
+  padding-bottom: 3px;
+  position: relative;
 }
 
-#main-navbar {
-  background-color: #1f8dd6;
-  color: #ffffff;
-  font-size: 25px;
-  padding-top: 15px;
-  padding-bottom: 10px;
+.navbar-item:hover {
+  cursor: pointer;
 }
 
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-  .sidenav {
-  }
-  .sidenav a {
-    font-size: 18px;
-  }
-}
-
- /* The sidenav */
-.sidenav {
-  height: 100%;
-  width: 130px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
+.navbar-item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
   left: 0;
-  background-color: #111;
-  overflow-x: hidden;
+  background-color: #585858;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-item:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 /* Parallax CSS */
@@ -124,7 +125,7 @@ h2 {
 }
 
 .programming {
-  padding-bottom: 0px; !important
+  padding-bottom: 0px !important;
 }
 
 /* Work Experience CSS */
@@ -155,7 +156,7 @@ h2 {
 
 .side-projects {
   /* background-color: #ededed; */
-  width: 100%;
+  /* width: 100%; */
   padding-bottom: 2%;
 }
 
@@ -223,4 +224,11 @@ h2 {
 
 .modal-body p {
   margin-bottom: 6%;
+}
+
+/* Card shadow */
+.card {
+  background: #CCF3FF;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
