@@ -1,2 +1,2 @@
 # Resume
-My portfolio website that I update consistently.
+Hi, I'm Quang-Tri and this is my portfolio website
