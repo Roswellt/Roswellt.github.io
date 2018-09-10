@@ -16,7 +16,7 @@ h2, h3, p, li {
 
 /* Card shadow */
 .card {
-  background: #f6f9fc;
+  background: #ffffff;
   margin-bottom: 50px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
@@ -51,11 +51,18 @@ h2 {
   text-align: center;
 }
 
-.container {
-  height: 500px;
-  /* padding-left: 100px; */
+.outer-container {
+  height: 80vh;
   margin-bottom: 120px;
   padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.container {
+  height: 70vh;
 }
 
 /* Navbar */
@@ -131,12 +138,16 @@ h2 {
 }
 
 /* About CSS */
-
-.about > p {
+.about > .container > p {
   font-size: 1.5em;
 }
 
 /* Work Experience CSS */
+.work-experience {
+  height: auto;
+  padding-bottom: 5vh;
+}
+
 .job-name {
   display: inline-block;
   width: 100%;
@@ -247,5 +258,12 @@ h2 {
   }
   50% {
     color: black;
+  }
+}
+
+/* Mobile rules */
+@media only screen and (max-width: 680px) {
+  .container {
+    height: auto;
   }
 }

@@ -11,13 +11,13 @@ function scrollToCenter(section) {
 }
 
 $("#side-projects").click(function() {
-    scrollToCenter('side-projects')
+    scrollToCenter('.side-projects')
 })
 
 $("#work-experience").click(function() {
     scrollToCenter(".work-experience")
 })
 
-$("#programming").click(function() {
-    scrollToCenter(".programming")
+$("#about").click(function() {
+    scrollToCenter(".about")
 })
