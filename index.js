@@ -1,17 +1,23 @@
-$("#side-projects").click(function() {
+function scrollToCenter(section) {
+    var elHeight = $(section).innerHeight();
+    var windowHeight = $(window).height();
+    var offset = 0;
+    if (windowHeight > elHeight) {
+        offset = (windowHeight - elHeight) / 2;
+    }
     $('html, body').animate({
-        scrollTop: ($('.side-projects').offset().top)
+        scrollTop: $(section).offset().top - offset
     },500);
+}
+
+$("#side-projects").click(function() {
+    scrollToCenter('side-projects')
 })
 
 $("#work-experience").click(function() {
-    $('html, body').animate({
-        scrollTop: ($('.work-experience').offset().top)
-    },500);
+    scrollToCenter(".work-experience")
 })
 
 $("#programming").click(function() {
-    $('html, body').animate({
-        scrollTop: ($('.programming').offset().top)
-    },500);
+    scrollToCenter(".programming")
 })

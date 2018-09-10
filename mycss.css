@@ -1,16 +1,24 @@
 body,
 html {
-  background-color: #7FE0FF;
+  background-color: #ffffff;
   margin: 0;
   height: 100%;
+  font-family: 'Georgia', 'sans-serif';
 }
 
-h2 {
-  color: #40707F;
+.preface > h2, .preface > p {
+  color: #000000;
 }
 
-p {
-  color: #66797F;
+h2, h3, p, li {
+  color: #5a5959;
+}
+
+/* Card shadow */
+.card {
+  background: #f6f9fc;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
 .jumbotron {
@@ -44,29 +52,36 @@ h2 {
 }
 
 .container {
+  height: 500px;
   /* padding-left: 100px; */
-  padding-bottom: 60px;
+  margin-bottom: 120px;
   padding-top: 60px;
 }
 
 /* Navbar */
+.navbar {
+  position: absolute;
+  right: 0;
+}
+
 .navbar-list {
   list-style-type: none;
-  margin: 0;
   padding: 20px 0px 0px 0px;
-  float: right;
 }
 
 .navbar-item {
-  font-size: large;
+  font-size: 16px;
+  text-transform: uppercase;
   display: inline;
-  margin-right: 20px;
+  margin: 0px 20px 0px 20px;
   padding-bottom: 3px;
   position: relative;
+  color: #5a5d7a;
 }
 
 .navbar-item:hover {
   cursor: pointer;
+  color: #32a2d6;
 }
 
 .navbar-item:before {
@@ -76,7 +91,7 @@ h2 {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #585858;
+  background-color: #9fe1ff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -90,42 +105,35 @@ h2 {
   transform: scaleX(1);
 }
 
-/* Parallax CSS */
-
-.parallax {
-  height: 70%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.socials {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 
-#first {
-  height: 40%;
-  background-image: url(images/laptop2.jpg);
+.socials > a {
+  margin: 0px 10px 0px 10px;
 }
 
 /* Preface CSS */
 
+.preface {
+  height: 100vh;
+  padding-bottom: 0px;
+}
+
 .preface p {
+  font-size: 2.5em;
+  padding-top: 32vh;
+}
+
+/* About CSS */
+
+.about > p {
   font-size: 1.5em;
-  height: 150px;
-  padding: 0px 70px 0px 70px;
-}
-
-/* Programming CSS */
-
-.programming li {
-  padding-bottom: 30px;
-  font-size: 1.2em;
-}
-.programming ul {
-  padding-left: 100px;
-  padding-right: 100px;
-}
-
-.programming {
-  padding-bottom: 0px !important;
 }
 
 /* Work Experience CSS */
@@ -155,9 +163,8 @@ h2 {
 /* Side projects CSS */
 
 .side-projects {
-  /* background-color: #ededed; */
-  /* width: 100%; */
   padding-bottom: 2%;
+  height: auto;
 }
 
 .side-projects img {
@@ -226,9 +233,19 @@ h2 {
   margin-bottom: 6%;
 }
 
-/* Card shadow */
-.card {
-  background: #CCF3FF;
-  margin-bottom: 50px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+/* Blinking cursor */
+.blinking-cursor {
+  font-weight: 100;
+  font-size: 40px;
+  color: #2E3D48;
+  animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+  from, to {
+    color: transparent;
+  }
+  50% {
+    color: black;
+  }
 }
