@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Resume</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -12,7 +11,7 @@
 
   <div class="navbar">
     <ul class="navbar-list">
-      <li class="navbar-item" id="programming">About</li>
+      <li class="navbar-item" id="about">About</li>
       <li class="navbar-item" id="work-experience">Work Experience</li>
       <li class="navbar-item" id="side-projects">Side Projects</li>
     </ul>
@@ -23,26 +22,38 @@
       Welcome to my website<span class="blinking-cursor">|</span>
     </p>
   </div>
-
-  <div class="container about card">
-    <h2>─── About ───</h2>
-    <p>I am a fourth year software engineering student with a passion in web design and programming. I specialize in Java applications, with
-    knowledge in Python and C++.</p>
-    <br>
-    <p>I like working on personal projects in my free time, or taking online courses to learn about new things. Currently working through
-      a udemy course on Angular 6.
-    </p>
-    <br>
-    <br>
-    <div class="socials">
-      <a href="mailto:qtrido@gmail.com"><img src="images/gmail.png"></a>
-      <a href="https://github.com/roswellt"><img src="images/github.png"></a>
-      <a href="https://ca.linkedin.com/in/qtrido"><img src="images/linkedin.png"></a>
-    </div>
+  <div class="outer-container about">
+      <div class="container about card">
+        <h2>─── About ───</h2>
+        <p>I am a fourth year software engineering student with a passion in web design and programming. I specialize in Java applications, with
+        knowledge in Python and C++.</p>
+        <br>
+        <p>I like working on personal projects in my free time, or taking online courses to learn about new things. Currently working through
+          a udemy course on Angular 6.
+        </p>
+        <br>
+        <br>
+        <div class="socials">
+          <a href="mailto:qtrido@gmail.com"><img src="images/gmail.png"></a>
+          <a href="https://github.com/roswellt"><img src="images/github.png"></a>
+          <a href="https://ca.linkedin.com/in/qtrido"><img src="images/linkedin.png"></a>
+        </div>
+      </div>
   </div>
 
   <div class="container work-experience card">
     <h2>─── Work Experience ───</h2>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="job-name">
+          <h3>Ford Motor Company</h3>
+          <h4>Test Automation Developer</h4>
+        </div>
+        <p>Tested and modified scripts that tested Ford's latest infotainment system.
+          Triaged test failures, reported issues and created JIRAs to track critical issues.</p>
+      </div>
+    </div>
     <div class="row">
       <div class="col-md-2"></div>
       <div class="col-md-8">
@@ -84,7 +95,7 @@
           <img class="center-block" src="images/bustexter.png" />
           <div class="center-block image-caption">
             <div class="center-block project-title">
-              <p>Bus Tester</p>
+              <p>Bus Texter</p>
               <p class="caption-button" data-toggle="modal" data-target="#bustexter-modal">Info</p>
             </div>
           </div>
@@ -165,6 +176,4 @@
   <script type="text/javascript" src="index.js"></script>
 
 </body>
-
-
 </html>
