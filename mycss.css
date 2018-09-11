@@ -52,7 +52,7 @@ h2 {
 }
 
 .outer-container {
-  height: 80vh;
+  height: auto;
   margin-bottom: 120px;
   padding-top: 60px;
   display: flex;
@@ -62,7 +62,8 @@ h2 {
 }
 
 .container {
-  height: 70vh;
+  height: auto;
+  padding-bottom: 5vh;
 }
 
 /* Navbar */
@@ -217,22 +218,17 @@ h2 {
 
 /* Project image caption CSS */
 
-.caption-button {
-  font-family: georgia;
-  margin: 0px 30% 0px 30%;
-  border-style: solid;
-  border-width: 2px;
-  border-color: white;
-}
-
-.caption-button:hover {
+.image-caption:hover {
   cursor: pointer;
 }
 
 /* Modal CSS */
 
+.modal-header {
+  border-bottom: 0;
+}
+
 .modal-title {
-  text-align: center;
   font-size: 2em;
 }
 
@@ -242,6 +238,25 @@ h2 {
 
 .modal-body p {
   margin-bottom: 6%;
+}
+
+.modal-content {
+  border-radius: 4px;
+}
+
+.project-skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.project-skill {
+  border-radius: 4px;
+  border: 2px solid #92eac0;
+  font-family: 'Quicksand', 'sans-serif';
+  font-size: .85em;
+  padding: 8px;
+  margin-right: 10px;
+  color: #505d7b;
 }
 
 /* Blinking cursor */
@@ -258,12 +273,5 @@ h2 {
   }
   50% {
     color: black;
-  }
-}
-
-/* Mobile rules */
-@media only screen and (max-width: 680px) {
-  .container {
-    height: auto;
   }
 }
