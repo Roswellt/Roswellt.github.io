@@ -21,6 +21,10 @@ h2, h3, p, li {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
 
+.card-two {
+  box-shadow: 1px 1px 0px 0px rgba(146,234,191,1);
+}
+
 .jumbotron {
   background-color: #ededed;
   text-align: center;
@@ -31,11 +35,6 @@ h2, h3, p, li {
   padding: 0;
   padding-top: 10px;
   margin: 0;
-}
-
-.space {
-  width: 100%;
-  margin-top: 3%;
 }
 
 .space-medium {
@@ -52,6 +51,7 @@ h2 {
 }
 
 .outer-container {
+  width: 100% !important;
   height: auto;
   margin-bottom: 120px;
   padding-top: 60px;
@@ -122,8 +122,12 @@ h2 {
   align-content: center;
 }
 
+.pop-up:hover {
+  animation: pop-up 0.5s both;
+}
+
 .socials > a {
-  margin: 0px 10px 0px 10px;
+  margin: 0px 35px 0px 35px;
 }
 
 /* Preface CSS */
@@ -143,6 +147,10 @@ h2 {
   font-size: 1.5em;
 }
 
+.about {
+  width: 80%;
+}
+
 /* Work Experience CSS */
 .work-experience {
   height: auto;
@@ -152,7 +160,7 @@ h2 {
 .job-name {
   display: inline-block;
   width: 100%;
-  padding-bottom: 30px;
+  padding-bottom: 1vh;
 }
 .job-name h3 {
   float: left;
@@ -170,6 +178,10 @@ h2 {
   margin: 0px;
   font-size: 1.2em;
   color: #585858;
+}
+
+.job {
+  padding-bottom: 5vh;
 }
 
 /* Side projects CSS */
@@ -202,14 +214,18 @@ h2 {
 .image-wrapper .image-caption:hover {
   opacity: .7;
   -webkit-transition: opacity 0.35s;
+  box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.75);
 }
 
 .image-wrapper .project-title {
+  font-family: "Signika", "sans-serif";
   position: absolute;
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 2em;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 .image-wrapper .project-title p {
@@ -240,6 +256,10 @@ h2 {
   margin-bottom: 6%;
 }
 
+.modal {
+  top: 20vh;
+}
+
 .modal-content {
   border-radius: 4px;
 }
@@ -252,9 +272,9 @@ h2 {
 .project-skill {
   border-radius: 4px;
   border: 2px solid #92eac0;
-  font-family: 'Quicksand', 'sans-serif';
-  font-size: .85em;
-  padding: 8px;
+  font-family: 'Camphor', 'sans-serif';
+  font-size: 1em;
+  padding: 6px;
   margin-right: 10px;
   color: #505d7b;
 }
@@ -267,11 +287,24 @@ h2 {
   animation: 1s blink step-end infinite;
 }
 
+/* Effects */
 @keyframes blink {
   from, to {
     color: transparent;
   }
   50% {
     color: black;
+  }
+}
+
+@keyframes pop-up {
+  0% {
+      transform: translateY(0);
+      transform-origin: bottom;
+  }
+
+  to {
+      transform: translateY(-5px);
+      /* transform-origin: bottom; */
   }
 }
