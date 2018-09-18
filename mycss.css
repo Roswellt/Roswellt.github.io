@@ -58,11 +58,16 @@ h2 {
 .outer-container {
   width: 100% !important;
   height: auto;
-  margin-bottom: 200px;
-  padding-top: 60px;
+  margin-bottom: 120px;
+  padding-top: 80px;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.grey {
+  background: #edeeef;
 }
 
 .container {
@@ -147,27 +152,20 @@ h2 {
 }
 
 /* About CSS */
-.about > .container > p {
+.about > p {
   font-size: 1.5em;
+  line-height: 2;
 }
 
 .about {
-  width: 80%;
-}
-
-.about > .container {
   width: 70%
 }
 
-.about > .container > h2 {
+.about > h2 {
   padding-bottom: 15px;
   font-weight: bold;
   font-size: 2.5em;
   text-align: left;
-}
-
-.about > .container > p {
-  line-height: 2;
 }
 
 /* Work Experience CSS */
@@ -180,6 +178,7 @@ h2 {
   display: inline-block;
   width: 100%;
   padding-bottom: 2.5%;
+  padding-top: 2.5%;
 }
 .job-name h3 {
   float: left;
@@ -209,6 +208,7 @@ h2 {
 .side-projects {
   padding-bottom: 2%;
   height: auto;
+  width: 100%;
 }
 
 .side-projects img {
