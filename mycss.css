@@ -66,6 +66,10 @@ h2 {
   justify-content: center;
 }
 
+.no-margin {
+  margin: 0;
+}
+
 .grey {
   background: #edeeef;
 }
@@ -129,6 +133,7 @@ h2 {
   justify-content: center;
   align-items: center;
   align-content: center;
+  padding-bottom: 10vh;
 }
 
 .pop-up:hover {
@@ -297,6 +302,10 @@ h2 {
   padding: 6px;
   margin-right: 10px;
   color: #505d7b;
+}
+
+.center-block {
+  border-radius: 40px;
 }
 
 /* Blinking cursor */
