@@ -10,13 +10,19 @@ html {
   color: #000000;
 }
 
-h2, h3, p, li {
+h3, p, li {
   color: #5a5959;
 }
 
 h2 {
-  font-family: "Helvetica", "serif";
   text-transform: uppercase;
+  color: #002a32;
+  font-size: 3em;
+  font-family: Georgia;
+  padding-bottom: 2px;
+  text-align: center;
+  background-image: linear-gradient(to top,rgba(0,214,214,.25) 54%,transparent 54%,transparent 100%);
+  display: inline;
 }
 
 /* Card shadow */
@@ -47,14 +53,6 @@ h2 {
   height: 3%;
 }
 
-h2 {
-  padding-bottom: 30px;
-  font-size: 3em;
-  font-family: Georgia;
-  padding-bottom: 40px;
-  text-align: center;
-}
-
 .outer-container {
   width: 100% !important;
   height: auto;
@@ -70,10 +68,6 @@ h2 {
   margin: 0;
 }
 
-.grey {
-  background: #edeeef;
-}
-
 .container {
   height: auto;
   padding-bottom: 5vh;
@@ -81,23 +75,30 @@ h2 {
 
 /* Navbar */
 .navbar {
-  position: absolute;
+  position: fixed;
   right: 0;
+  z-index: 1;
+  background-color: #002a32;
+  width: 100%;
+  border-radius: 0px;
+  border: 0px;
 }
 
 .navbar-list {
   list-style-type: none;
-  padding: 20px 0px 0px 0px;
+  padding: 20px 0px 20px 0px;
+  float: right;
+  margin-bottom: 0px;
 }
 
 .navbar-item {
-  font-size: 16px;
+  font-size: 1.1em;
   text-transform: uppercase;
   display: inline;
   margin: 0px 20px 0px 20px;
   padding-bottom: 3px;
   position: relative;
-  color: #5a5d7a;
+  color: #00d6d6;
 }
 
 .navbar-item:hover {
@@ -167,7 +168,6 @@ h2 {
 }
 
 .about > h2 {
-  padding-bottom: 15px;
   font-weight: bold;
   font-size: 2.5em;
   text-align: left;
@@ -308,6 +308,13 @@ h2 {
   border-radius: 40px;
 }
 
+.center-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
 /* Blinking cursor */
 .blinking-cursor {
   font-weight: 100;
@@ -335,5 +342,35 @@ h2 {
   to {
       transform: translateY(-5px);
       /* transform-origin: bottom; */
+  }
+}
+
+/* Mobile rules */
+@media only screen and (max-width: 600px) {
+
+  .navbar-list {
+    float: none;
+  }
+
+  .navbar-item {
+    margin: 0 0 0 10px;
+  }
+
+  .about {
+    width: 100%;
+  }
+
+  .outer-container {
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+
+  .work-experience > .center-wrap {
+    margin-bottom: 0px;
+  }
+
+  .work-experience > .center-wrap > h2 {
+    font-size: 2.5em;
   }
 }
