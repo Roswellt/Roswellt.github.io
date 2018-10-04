@@ -21,3 +21,15 @@ $("#work-experience").click(function() {
 $("#about").click(function() {
     scrollToCenter(".about")
 })
+
+// Display second line of preface after first line finishes typing
+$(function() {
+    $('.type-second').hide();
+    setTimeout(function(){
+        showElement();
+     }, 1000);
+
+    function showElement() {
+        $('.type-second').show();
+    }
+ });
