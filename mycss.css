@@ -78,12 +78,13 @@ h2 {
   border-radius: 0px;
   border: 0px;
   max-width: 100vw;
+  padding: 0;
 }
 
 .navbar-list {
   list-style-type: none;
   padding: 20px 0px 20px 0px;
-  float: right;
+  width: 100%;
   margin-bottom: 0px;
 }
 
@@ -91,14 +92,21 @@ h2 {
   font-size: 1.1em;
   text-transform: uppercase;
   display: inline;
-  margin: 0px 20px 0px 20px;
   padding-bottom: 3px;
   position: relative;
   color: #00d6d6;
 }
 
+.navbar-separator {
+  margin: 0px 20px 0px 20px;
+}
+
 .navbar-item:hover {
   cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,214,214, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
 }
 
 .navbar-item:before {
@@ -364,18 +372,31 @@ h2 {
 }
 
 /* Mobile rules */
-@media only screen and (max-width: 600px) {
-
-  .navbar-list {
-    float: none;
-  }
-
-  .navbar-item {
-    margin: 0 0 0 10px;
-  }
+@media only screen and (max-width: 768px) {
 
   .about {
     width: 100%;
+  }
+
+  .navbar-separator {
+    display: none;
+  }
+
+  .navbar-list {
+    display: block;
+
+  }
+
+  .navbar-item {
+    display: list-item;
+  }
+
+  .navbar-item:not(:last-child) {
+    padding-bottom: 20px;
+  }
+
+  .navbar-item:hover:before {
+    visibility: hidden;
   }
 
   .outer-container {
