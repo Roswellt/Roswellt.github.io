@@ -23,8 +23,12 @@ $("#about").click(function() {
 })
 
 // Display second line of preface after first line finishes typing
+$(".type-second").ready(
+    function() {
+        $('.type-second').hide();
+    }
+)
 $(function() {
-    $('.type-second').hide();
     setTimeout(function(){
         showElement();
      }, 1000);
@@ -32,4 +36,4 @@ $(function() {
     function showElement() {
         $('.type-second').show();
     }
- });
+});
