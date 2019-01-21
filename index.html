@@ -14,13 +14,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-
+  
+  <div class="col hide-on-small-only m3 12 navbar">
+    <ul class="section table-of-contents">
+      <li><a href="#introduction">Introduction</a></li>
+      <li><a href="#work-experience">Work Experience</a></li>
+      <li><a href="#side-projects">Side Projects</a></li>
+    </ul>
+  </div>
+  
   <div class="preface-container section scrollspy" id="introduction">
     <div class="container preface text-center">
       <p class="type-first">Hi. I'm Quang-Tri<span class="blinking-cursor">|</span></p>
     </div>
     <div class="row about">
-      <div class="col-md-6 about">
+      <div class="col s7 offset-s1 about">
         <h2>About</h2>
         <p>I am a fourth year Software Engineering student at the University of Ottawa. I have a passion for web design and programming.</p>
         <p class="read-more">I like working on personal projects in my free time, or taking online courses to learn about new things. 
@@ -29,7 +37,7 @@
         <p class="read-more">My greatest accomplishment is my elementary school's chess championship trophy</p>
         <a class="waves-effect custom-color-1 btn-small read-more-btn">VIEW MORE</a>
       </div>
-      <div class="col-md-6 contacts">
+      <div class="col s2 offset-s2 contacts">
         <h4>Contact</h4>
         <ul>
           <li>
@@ -101,35 +109,33 @@
       </div>
   </div>
 
-  <div class="outer-container section scrollspy" id="side-projects">
-    <div class="container side-projects">
-      <div class="center-wrap">
-        <h2>Projects</h2>
-      </div>
-      <div class="row">
-        <div class="col-md-1"></div>
-        <div class="col-md-5">
-          <div class="image-wrapper">
-            <img class="center-block" src="images/bustexter.png" />
-            <div class="center-block image-caption" data-toggle="modal" data-target="#bustexter-modal">
-              <div class="center-block project-title">
-                <p>Bus Texter</p>
-              </div>
+  <div class="container side-projects section scrollspy" id="side-projects">
+    <div class="center-wrap">
+      <h2>Projects</h2>
+    </div>
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-5">
+        <div class="image-wrapper">
+          <img class="center-block" src="images/bustexter.png" />
+          <div class="center-block image-caption" data-toggle="modal" data-target="#bustexter-modal">
+            <div class="center-block project-title">
+              <p>Bus Texter</p>
             </div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div class="image-wrapper">
-            <img class="center-block" src="images/Automify.png" />
-            <div class="center-block image-caption" data-toggle="modal" data-target="#automify-modal">
-              <div class="center-block project-title">
-                <p>Automify</p>
-              </div>
+      </div>
+      <div class="col-md-5">
+        <div class="image-wrapper">
+          <img class="center-block" src="images/Automify.png" />
+          <div class="center-block image-caption" data-toggle="modal" data-target="#automify-modal">
+            <div class="center-block project-title">
+              <p>Automify</p>
             </div>
           </div>
         </div>
-        <div class="col-md-1"></div>
       </div>
+      <div class="col-md-1"></div>
     </div>
   </div>
 
@@ -176,6 +182,12 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col s10 offset-s2">
+      <ion-icon name="laptop" class="contacts-icon"></ion-icon><span>Made by Quang-Tri Do</span>
     </div>
   </div>
   <!-- <div class="socials-container">
