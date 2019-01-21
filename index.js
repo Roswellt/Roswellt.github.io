@@ -22,18 +22,11 @@ $("#about").click(function() {
     scrollToCenter(".about")
 })
 
-// Display second line of preface after first line finishes typing
-$(".type-second").ready(
-    function() {
-        $('.type-second').hide();
+$(".read-more-btn").click(function() {
+    var visible = $(".read-more").css("display") === "none" ? false : true;
+    console.log(visible);
+    if (!visible) {
+        $(".read-more").css("display", "block");
+        $(".read-more-btn").css("display", "none");
     }
-)
-$(function() {
-    setTimeout(function(){
-        showElement();
-     }, 1000);
-
-    function showElement() {
-        $('.type-second').show();
-    }
-});
+})
