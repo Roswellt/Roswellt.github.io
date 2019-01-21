@@ -15,6 +15,15 @@ $(document).ready(function(){
 $('.scrollspy').scrollSpy();
 });
 
+// Initialize modals
+$(document).ready(function(){
+    $('.modal').modal();
+});
+
+$('.modal').click(function() {
+    $('.modal').modal('close');
+})
+
 $("#side-projects").click(function() {
     scrollToCenter('.side-projects')
 })

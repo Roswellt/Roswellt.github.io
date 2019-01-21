@@ -2,8 +2,6 @@
 <html>
 <head>
   <title>Resume</title>
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="resume_css.css">
   <!-- Materialize CSS -->
@@ -24,7 +22,7 @@
   </div>
   
   <div class="preface-container section scrollspy" id="introduction">
-    <div class="container preface text-center">
+    <div class="container preface">
       <p class="type-first">Hi. I'm Quang-Tri<span class="blinking-cursor">|</span></p>
     </div>
     <div class="row about">
@@ -34,10 +32,9 @@
         <p class="read-more">I like working on personal projects in my free time, or taking online courses to learn about new things. 
           Apart from coding, I enjoy playing video games, watching Masterchef, cooking, and playing chess.
         </p>
-        <p class="read-more">My greatest accomplishment is my elementary school's chess championship trophy</p>
         <a class="waves-effect custom-color-1 btn-small read-more-btn">VIEW MORE</a>
       </div>
-      <div class="col s2 offset-s2 contacts">
+      <div class="col s4 contacts">
         <h4>Contact</h4>
         <ul>
           <li>
@@ -62,23 +59,23 @@
       <h2>Work Experience</h2>
     </div>
     <div class="row job">
-      <div class="col-md-2">
-        <img src="images/Ford_logo.jpg">
+      <div class="col s2">
+        <img src="images/Ford_logo.jpg">  
       </div>
-      <div class="col-md-8">
+      <div class="col s10">
         <div class="job-name">
           <h3>Ford Motor Company</h3>
-          <h4>Test Automation Developer, May - August 2018</h4>
+          <h4>Test Automation Dev, May - August 2018</h4>
         </div>
         <p>Tested and modified scripts that tested Ford's latest infotainment system.
           Triaged test failures, reported issues and created JIRAs to track critical issues.</p>
       </div>
     </div>
     <div class="row job">
-      <div class="col-md-2">
+      <div class="col s2">
         <img src="images/cra-logo.jpg">
       </div>
-      <div class="col-md-8">
+      <div class="col s10">
         <div class="job-name"> 
           <h3>Canada Revenue Agency</h3>
           <h4>Java Developer, January - April 2017</h4>
@@ -89,13 +86,12 @@
           FitNesse framework.
         </p>
       </div>
-      <div class="col-md-2"></div>
     </div>
     <div class="row job">
-        <div class="col-md-2">
+        <div class="col s2">
           <img src="images/ssc-logo.jpg">
         </div>
-        <div class="col-md-8">
+        <div class="col s10">
           <div class="job-name"> 
             <h3>Shared Services Canada</h3>
             <h4>IT Specialist, May - August 2016</h4>
@@ -105,7 +101,6 @@
             a proof of concept for a new software designed to perform updates on many virtual machines.
           </p>
         </div>
-        <div class="col-md-2"></div>
       </div>
   </div>
 
@@ -114,72 +109,64 @@
       <h2>Projects</h2>
     </div>
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-5">
+      <div class="col s1"></div>
+      <div class="col s5">
         <div class="image-wrapper">
           <img class="center-block" src="images/bustexter.png" />
-          <div class="center-block image-caption" data-toggle="modal" data-target="#bustexter-modal">
+          <div class="center-block image-caption modal-trigger" data-target="bustexter-modal">
             <div class="center-block project-title">
               <p>Bus Texter</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-5">
+      <div class="col s5">
         <div class="image-wrapper">
           <img class="center-block" src="images/Automify.png" />
-          <div class="center-block image-caption" data-toggle="modal" data-target="#automify-modal">
+          <div class="center-block image-caption modal-trigger" data-target="automify-modal">
             <div class="center-block project-title">
               <p>Automify</p>
             </div>
           </div>
         </div>
       </div>
-      <div class="col-md-1"></div>
+      <div class="col s1"></div>
     </div>
   </div>
 
   <!-- Bus texter Modal -->
-  <div class="modal fade" id="bustexter-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" data-dismiss="modal">
-        <div class="modal-header">
-          <h4 class="modal-title">Bus Texter</h4>
-        </div>
-        <div class="modal-body">
-          <p>A python tool that texts which bus number and route to take to get from location to destination to your mobile
-            number.</p> 
-            <p>Originally made to avoid getting lost while on a phone plan without data. Since emails can be sent via text message, 
-              no internet connection is needed on the user side</p>
-          <div class="project-skills">
-            <!-- <img class="modal-image" src="images/bustexter-modal.png" /> -->
-            <span class="project-skill card-two">Python</span>
-            <span class="project-skill card-two">Gmail API</span>
-            <span class="project-skill card-two">Gmaps API</span>
-          </div>
+  <div class="modal" id="bustexter-modal">
+    <div class="modal-content">
+      <h4 class="modal-title">Bus Texter</h4>
+      <div class="modal-body">
+        <p>A python tool that texts which bus number and route to take to get from location to destination to your mobile
+          number.</p> 
+          <p>Originally made to avoid getting lost while on a phone plan without data. Since emails can be sent via text message, 
+            no internet connection is needed on the user side</p>
+        <div class="project-skills">
+          <!-- <img class="modal-image" src="images/bustexter-modal.png" /> -->
+          <span class="project-skill card-two">Python</span>
+          <span class="project-skill card-two">Gmail API</span>
+          <span class="project-skill card-two">Gmaps API</span>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Automify Modal -->
-  <div class="modal fade" id="automify-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content" data-dismiss="modal">
-        <div class="modal-header">
-          <h4 class="modal-title">Automify</h4>
-        </div>
-        <div class="modal-body">
-          <p>Developed with a group of friends during the <a href="https://futureofwork.ca/">future of work hackathon</a>. 
-            A hackathon that focuses on the future automation
-            of work by artificial intelligence and automation.</p>
-          <p>A chrome extension that displays the likelihood of automation of a job posting on the Indeed search engine. The
-            data was taken from a dataset that was made available by the hackathon.</p>
-          <div class="project-skills">
-            <span class="project-skill card-two">HTML5</span>
-            <span class="project-skill card-two">CSS3</span>
-            <span class="project-skill card-two">Javascript</span>
-          </div>
+  <div class="modal" id="automify-modal">
+    <div class="modal-content">
+      <h4 class="modal-title">Automify</h4>
+      <div class="modal-body">
+        <p>Developed with a group of friends during the <a href="https://futureofwork.ca/">future of work hackathon</a>. 
+          A hackathon that focuses on the future automation
+          of work by artificial intelligence and automation.</p>
+        <p>A chrome extension that displays the likelihood of automation of a job posting on the Indeed search engine. The
+          data was taken from a dataset that was made available by the hackathon.</p>
+        <div class="project-skills">
+          <span class="project-skill card-two">HTML5</span>
+          <span class="project-skill card-two">CSS3</span>
+          <span class="project-skill card-two">Javascript</span>
         </div>
       </div>
     </div>
@@ -204,9 +191,6 @@
   <script src="https://unpkg.com/ionicons@4.2.2/dist/ionicons.js"></script>
   <!-- Materialize JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <!-- Latest compiled JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <!-- Javascript -->
   <script type="text/javascript" src="index.js"></script>
 
