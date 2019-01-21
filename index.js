@@ -10,6 +10,11 @@ function scrollToCenter(section) {
     },500);
 }
 
+// Initialize scrollspy
+$(document).ready(function(){
+$('.scrollspy').scrollSpy();
+});
+
 $("#side-projects").click(function() {
     scrollToCenter('.side-projects')
 })
