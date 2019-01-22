@@ -13,12 +13,16 @@
 </head>
 <body>
   
-  <div class="col hide-on-small-only m3 12 navbar">
-    <ul class="section table-of-contents">
-      <li><a href="#introduction">Introduction</a></li>
-      <li><a href="#work-experience">Work Experience</a></li>
-      <li><a href="#side-projects">Side Projects</a></li>
-    </ul>
+  <div class="navbar-fixed">
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="hide-on-med-and-down table-of-contents">
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#work-experience">Work Experience</a></li>
+          <li><a href="#side-projects">Side Projects</a></li>
+        </ul>
+      </div>
+    </nav>
   </div>
   
   <div class="preface-container section scrollspy" id="introduction">
@@ -26,28 +30,28 @@
       <p class="type-first">Hi. I'm Quang-Tri<span class="blinking-cursor">|</span></p>
     </div>
     <div class="row about">
-      <div class="col s7 offset-s1 about">
+      <div class="col s8 m7 offset-m1 about">
         <h2>About</h2>
         <p>I am a fourth year Software Engineering student at the University of Ottawa. I have a passion for web design and programming.</p>
         <p class="read-more">I like working on personal projects in my free time, or taking online courses to learn about new things. 
           Apart from coding, I enjoy playing video games, watching Masterchef, cooking, and playing chess.
         </p>
-        <a class="waves-effect custom-color-1 btn-small read-more-btn">VIEW MORE</a>
+        <a class="waves-effect custom-color-1 btn-small read-more-btn custom-color-3">VIEW MORE</a>
       </div>
-      <div class="col s4 contacts">
+      <div class="col s4 m3 offset-m1 contacts">
         <h4>Contact</h4>
         <ul>
           <li>
             <ion-icon name="mail" class="contacts-icon"></ion-icon>
-            <span class="contacts-info">qtrido@gmail.com</span>
+            <span class="custom-color-3">qtrido@gmail.com</span>
           </li>
           <li>
             <ion-icon name="logo-github" class="contacts-icon"></ion-icon>
-            <span class="contacts-info">Roswellt</span>
+            <span class="custom-color-3">Roswellt</span>
           </li>
           <li>
             <ion-icon name="logo-linkedin" class="contacts-icon"></ion-icon>
-            <span class="contacts-info">@qtrido</span>
+            <span class="custom-color-3">@qtrido</span>
           </li>
         </ul>
       </div>
@@ -59,10 +63,10 @@
       <h2>Work Experience</h2>
     </div>
     <div class="row job">
-      <div class="col s2">
+      <div class="col m12 l2">
         <img src="images/Ford_logo.jpg">  
       </div>
-      <div class="col s10">
+      <div class="col m12 l10">
         <div class="job-name">
           <h3>Ford Motor Company</h3>
           <h4>Test Automation Dev, May - August 2018</h4>
@@ -72,10 +76,10 @@
       </div>
     </div>
     <div class="row job">
-      <div class="col s2">
+      <div class="col m12 l2">
         <img src="images/cra-logo.jpg">
       </div>
-      <div class="col s10">
+      <div class="col m12 l10">
         <div class="job-name"> 
           <h3>Canada Revenue Agency</h3>
           <h4>Java Developer, January - April 2017</h4>
@@ -88,10 +92,10 @@
       </div>
     </div>
     <div class="row job">
-        <div class="col s2">
+        <div class="col m12 l2">
           <img src="images/ssc-logo.jpg">
         </div>
-        <div class="col s10">
+        <div class="col m12 l10">
           <div class="job-name"> 
             <h3>Shared Services Canada</h3>
             <h4>IT Specialist, May - August 2016</h4>
@@ -104,33 +108,35 @@
       </div>
   </div>
 
-  <div class="container side-projects section scrollspy" id="side-projects">
-    <div class="center-wrap">
-      <h2>Projects</h2>
-    </div>
-    <div class="row">
-      <div class="col s1"></div>
-      <div class="col s5">
-        <div class="image-wrapper">
-          <img class="center-block" src="images/bustexter.png" />
-          <div class="center-block image-caption modal-trigger" data-target="bustexter-modal">
-            <div class="center-block project-title">
-              <p>Bus Texter</p>
+  <div class="custom-color-2">
+    <div class="container side-projects section scrollspy" id="side-projects">
+      <div class="center-wrap">
+        <h2>Projects</h2>
+      </div>
+      <div class="row">
+        <div class="col s1"></div>
+        <div class="col s5">
+          <div class="image-wrapper">
+            <img class="center-block" src="images/bustexter.png" />
+            <div class="center-block image-caption modal-trigger" data-target="bustexter-modal">
+              <div class="center-block project-title">
+                <p>Bus Texter</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col s5">
-        <div class="image-wrapper">
-          <img class="center-block" src="images/Automify.png" />
-          <div class="center-block image-caption modal-trigger" data-target="automify-modal">
-            <div class="center-block project-title">
-              <p>Automify</p>
+        <div class="col s5">
+          <div class="image-wrapper">
+            <img class="center-block" src="images/Automify.png" />
+            <div class="center-block image-caption modal-trigger" data-target="automify-modal">
+              <div class="center-block project-title">
+                <p>Automify</p>
+              </div>
             </div>
           </div>
         </div>
+        <div class="col s1"></div>
       </div>
-      <div class="col s1"></div>
     </div>
   </div>
 
@@ -172,8 +178,8 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col s10 offset-s2">
+  <div class="row custom-color-2 footer">
+    <div class="col s10 offset-s2 custom-color-2">
       <ion-icon name="laptop" class="contacts-icon"></ion-icon><span>Made by Quang-Tri Do</span>
     </div>
   </div>

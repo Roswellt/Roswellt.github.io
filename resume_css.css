@@ -22,12 +22,13 @@ h4 {
   background-color: #ecf1f7 !important;
 }
 
-.page-footer {
-  padding: 0 !important;
+.custom-color-3 {
+  color: #002a32 !important;
 }
 
-.page-footer .container {
-  color: black;
+.footer {
+  margin-bottom: 0 !important;
+  padding-bottom: 20px;
 }
 
 h2 {
@@ -41,8 +42,32 @@ h2 {
   display: inline;
 }
 
-.navbar {
-  position: fixed;
+.nav-wrapper, nav, .navbar-fixed{
+  background-color: white;
+  box-shadow: none !important;
+}
+
+nav ul a:hover {
+  background-color: white !important;
+}
+
+.table-of-contents {
+  margin-top: 0;
+  padding-bottom: 0 !important;
+  text-align: center;
+}
+
+.table-of-contents a {
+  color: #002a32 !important;
+}
+
+.table-of-contents a:hover {
+  border-left: 2px solid #ee6e73 !important;
+}
+
+.table-of-contents li {
+  padding-bottom: 20px !important;
+  display: contents;
 }
 
 /* Card shadow */
@@ -128,10 +153,6 @@ h2 {
   color: black;
 }
 
-.contacts-info {
-  color: #727c93 !important;
-}
-
 /* About CSS */
 .about > p {
   font-size: 1em;
@@ -152,7 +173,6 @@ h2 {
 /* Work Experience CSS */
 .work-experience {
   height: auto;
-  padding-bottom: 10vh !important;
 }
 
 .job-name {
@@ -187,7 +207,7 @@ h2 {
 /* Side projects CSS */
 
 .side-projects {
-  padding-bottom: 10vh !important;
+  padding-bottom: 30vh !important;
   height: auto;
   width: 100%;
 }

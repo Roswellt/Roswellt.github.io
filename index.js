@@ -10,14 +10,16 @@ function scrollToCenter(section) {
     },500);
 }
 
-// Initialize scrollspy
-$(document).ready(function(){
-$('.scrollspy').scrollSpy();
-});
-
-// Initialize modals
+// Initialize materialize components
 $(document).ready(function(){
     $('.modal').modal();
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    var elems = document.querySelectorAll('.scrollspy');
+    var instances = M.ScrollSpy.init(elems, {
+        scrollOffset: 0,
+    });
 });
 
 $('.modal').click(function() {
