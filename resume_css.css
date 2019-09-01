@@ -207,7 +207,7 @@ nav ul a:hover {
 /* Side projects CSS */
 
 .side-projects {
-  padding-bottom: 30vh !important;
+  padding-bottom: 0px;
   height: auto;
   width: 100%;
 }
