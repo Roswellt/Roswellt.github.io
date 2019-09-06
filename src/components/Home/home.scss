@@ -1,0 +1,86 @@
+.main {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.greeting {
+  margin: 20% 0 0 10%;
+}
+
+.greeting h2 {
+  font-size: 5em;
+  margin: 0;
+  color: #363636;
+}
+
+.greeting h4 {
+  font-size: 1.4em;
+  margin-top: 5%;
+  color: #5a5a5a;
+}
+
+.contact-images {
+  width: 8%;
+  height: 8%;
+  margin-right: 7%;
+}
+
+.hero-boxes > * {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform-origin: 100% 100%;
+}
+
+.rect-1 {
+  top: 20%;
+  left: 60%;
+  height: 400px;
+  width: 400px;
+  background-color: #0170d7;
+}
+
+.rect-2 {
+  top:  20%;
+  left: 80%;
+  height: 100px;
+  width: 100px;
+  background-color: #0170d7;
+}
+
+.rect-3 {
+  top: 50%;
+  left: 80%;
+  height: 150px;
+  width: 150px;
+  background-color: #0170d7;
+}
+
+.blob-1 {
+  top: 15%;
+  left: -25%;
+  height: 60%;
+  width: 60%;
+  opacity: 0.4;
+}
+
+.blob {
+  top: 20%;
+  left: -10%;
+  opacity: 0.4;
+}
+
+// .rect-4 {
+//   height: 50px;
+//   width: 50px;
+//   background-color: #0170d7;
+// }
+
+// .rect-5 {
+//   height: 100px;
+//   width: 300px;
+//   background-color: #0170d7;
+// }
