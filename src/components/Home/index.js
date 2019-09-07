@@ -5,6 +5,7 @@ import email from '../../assets/email-icon.svg';
 import github from '../../assets/github-icon.svg';
 import linkedin from '../../assets/linkedin-icon.svg';
 import resume from '../../assets/pdf-icon.svg';
+import resumePdf from '../../assets/Resume2019.pdf';
 
 import './home.scss'
 
@@ -48,7 +49,7 @@ class Home extends Component {
       easing: 'easeInOutExpo',
       scaleX: [1],
       scaleY: [0, 1],
-      perspective: '500px',
+      perspective: '300px',
       delay: anime.random(0, 400)
     }).add({
       duration: 400,
@@ -69,25 +70,61 @@ class Home extends Component {
       easing: 'easeInOutExpo',
       perspective: '500px',
       rotate: {
-        value: 45,
-        duration: 900
+        value: -60,
+        duration: 1000
       },
-      delay: 900
+      delay: 700
     })
 
     anime.timeline({
-      targets: '.blob-1'
+      targets: '.rect-4'
     }).add({
-      duration: 900,
-      opacity: [0, .4],
-      easing: 'easeInCubic',
+      duration: 700,
+      opacity: [0, 1],
+      scaleX: [0, 1],
+      scaleY: [0, 1],
+      easing: 'easeInOutExpo',
       perspective: '500px',
-      rotate: {
-      }
+      delay: 400
     })
 
+    anime.timeline({
+      targets: '.rect-5'
+    }).add({
+      duration: 1000,
+      opacity: [0, 1],
+      scaleX: [0, 1],
+      rotate: {
+        value: 45
+      },
+      easing: 'easeInOutExpo',
+      perspective: '500px',
+      delay: 600
+    })
+
+    anime.timeline({
+      targets: '.circle-1'
+    }).add({
+      duration: 400,
+      opacity: [0, 1],
+      easing: 'easeInOutExpo',
+      perspective: '500px',
+      delay: 450
+    })
+
+    anime.timeline({
+      targets: '.half-circle-1'
+    }).add({
+      duration: 400,
+      opacity: [0, 1],
+      easing: 'easeInOutExpo',
+      perspective: '500px',
+      delay: 450
+    })
+
+    // Continuous moving blob
     anime({
-      targets: '#morphing .blob',
+      targets: '#morphing .blob-1',
       d: [	
         { value: "M141.4,-201.9C181.6,-165.3,211.6,-121.9,226.3,-74.1C240.9,-26.4,240.3,25.8,223.1,70.5C205.8,115.3,172,152.7,132,175.7C92.1,198.7,46,207.4,-2.4,210.7C-50.9,214.1,-101.9,212.2,-140.2,188.7C-178.6,165.2,-204.4,120,-212.8,73.9C-221.3,27.8,-212.4,-19.2,-200.8,-68.4C-189.2,-117.7,-174.8,-169.3,-140.9,-207.9C-107,-246.6,-53.5,-272.3,-1.5,-270.3C50.5,-268.2,101.1,-238.5,141.4,-201.9Z" },
           { value: "M127.7,-177.4C171.1,-144.2,215.9,-114.4,235.2,-72.3C254.6,-30.2,248.5,24.3,226.2,67.4C203.8,110.5,165.1,142.2,124.7,170.6C84.2,199,42.1,224,-5.8,231.9C-53.7,239.9,-107.4,230.8,-152.1,203.8C-196.8,176.8,-232.5,132,-242.7,83C-253,34,-237.8,-19.2,-219.9,-70.6C-202,-122.1,-181.6,-171.9,-144.5,-207.2C-107.4,-242.4,-53.7,-263.2,-5.8,-255.3C42.1,-247.3,84.2,-210.6,127.7,-177.4Z" },
@@ -121,19 +158,13 @@ class Home extends Component {
           <h2>Quang-Tri</h2>
           <h4>Software Engineer from the University of Ottawa</h4>
           <div className="contacts">
-            <img className="email contact-images" src={email} alt="email"></img>
-            <img className="resume contact-images" src={resume} alt="resume"></img>
-            <img className="github contact-images" src={github} alt="github"></img>
-            <img className="linkedin contact-images" src={linkedin} alt="linkedin"></img>
+            <a href="mailto:qtrido@gmail.com"><img className="email contact-images" src={email} alt="email"></img></a>
+            <a href={resumePdf}><img className="resume contact-images" src={resume} alt="resume"></img></a>
+            <a href="https://github.com/Roswellt"><img className="github contact-images" src={github} alt="github"></img></a>
+            <a href="https://ca.linkedin.com/in/qtrido"><img className="linkedin contact-images" src={linkedin} alt="linkedin"></img></a>
           </div>
-        </div>
-        <div className="hero-boxes">
-          <div className="rect-1"></div>
-          <div className="rect-2"></div>
-          <div className="rect-3"></div>
-          <div className="rect-4"></div>
-          <div className="rect-5"></div>
-          <svg className="blob-1" width="600" height="600" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+
+          <svg className="blob-1" width="250" height="250" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
             <g transform="translate(250,250)">
               <defs>
                   <linearGradient id="MyGradient">
@@ -141,7 +172,20 @@ class Home extends Component {
                   <stop offset="90%" stopColor="#FE840E" />
                   </linearGradient>
               </defs>
-              <path id="morph" stroke="none" strokeWidth="0" d="M161.23691003228475,-142.91547838970675C181.22293223201214,-103.52046591026897,150.56953271518822,-38.07519551682116,132.17827658263366,25.22354638199265C113.78702045007908,88.52228828080645,107.65790770179386,149.67450168498627,78.41569906755855,164.33349172080008C49.17349043332327,178.9924817566139,-3.181814086862076,147.15824842406178,-56.01312467781069,120.21665030992501C-108.8444352687593,93.27505219578826,-162.15175193047116,71.2260893000669,-187.94767695994662,24.05229400148208C-213.74360198942205,-23.12150129710275,-212.02813538666103,-95.42012899855102,-176.1182906212972,-138.44965006594194C-140.20844585593338,-181.47917113333287,-70.10422292796669,-195.23958556666642,0.2606104941560024,-195.44741550061937C70.62544391627868,-195.65524543457227,141.25088783255737,-182.3104908691445,161.23691003228475,-142.91547838970675Z" fill="#FE840E"/></g></svg>
+              <path id="morph" stroke="none" strokeWidth="0" d="M161.23691003228475,-142.91547838970675C181.22293223201214,-103.52046591026897,150.56953271518822,-38.07519551682116,132.17827658263366,25.22354638199265C113.78702045007908,88.52228828080645,107.65790770179386,149.67450168498627,78.41569906755855,164.33349172080008C49.17349043332327,178.9924817566139,-3.181814086862076,147.15824842406178,-56.01312467781069,120.21665030992501C-108.8444352687593,93.27505219578826,-162.15175193047116,71.2260893000669,-187.94767695994662,24.05229400148208C-213.74360198942205,-23.12150129710275,-212.02813538666103,-95.42012899855102,-176.1182906212972,-138.44965006594194C-140.20844585593338,-181.47917113333287,-70.10422292796669,-195.23958556666642,0.2606104941560024,-195.44741550061937C70.62544391627868,-195.65524543457227,141.25088783255737,-182.3104908691445,161.23691003228475,-142.91547838970675Z" fill="#FE840E"/>
+            </g>
+          </svg>
+        </div>
+        <div className="hero-boxes">
+          <div className="half-circle-1"></div>
+          <div className="circle-1">
+            <div className="rect-3"></div>
+          </div>
+          <div className="rect-5"></div>
+          <div className="rect-1"></div>
+          <div className="rect-2"></div>
+          <div className="rect-4"></div>
+          <div className="rect-6"></div>
         </div>
       </div>
     )
