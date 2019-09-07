@@ -114,10 +114,10 @@ $initialsXPos: -10%;
 }
 
 .blob-1 {
-  top: -35%;
-  left: -40%;
-  height: 80%;
-  width: 80%;
+  top: -170%;
+  left: -120%;
+  height: 200%;
+  width: 200%;
   opacity: 0.4;
 }
 
@@ -146,17 +146,12 @@ $initialsXPos: -10%;
   }
 
   .hero-boxes {
-    width: 0px;
-    height: 0px;
-  }
-
-  .hero-boxes > * {
-    visibility: hidden;
+    display: none;
   }
 
   .greeting {
-    width: 50%;
-    height: 50%;
+    width: 75%;
+    height: 35%;
     margin: auto;
   }
 
@@ -173,7 +168,7 @@ $initialsXPos: -10%;
   }
 
   .contact-images {
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
   }
 }
