@@ -176,17 +176,19 @@ class Home extends Component {
             </g>
           </svg>
         </div>
-        <div className="hero-boxes">
-          <div className="half-circle-1"></div>
-          <div className="circle-1">
-            <div className="rect-3"></div>
+          <div className="hero-boxes">
+            <div className="initials">
+              <div className="half-circle-1"></div>
+              <div className="circle-1">
+                <div className="rect-3"></div>
+              </div>
+            </div>
+            <div className="rect-5"></div>
+            <div className="rect-1"></div>
+            <div className="rect-2"></div>
+            <div className="rect-4"></div>
+            <div className="rect-6"></div>
           </div>
-          <div className="rect-5"></div>
-          <div className="rect-1"></div>
-          <div className="rect-2"></div>
-          <div className="rect-4"></div>
-          <div className="rect-6"></div>
-        </div>
       </div>
     )
   }

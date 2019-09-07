@@ -1113,6 +1113,11 @@
     "@svgr/plugin-svgo" "^4.3.1"
     loader-utils "^1.2.3"
 
+"@types/animejs@^3.1.0":
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/@types/animejs/-/animejs-3.1.0.tgz#9fa31e5fcf3a0304aa097a2a357e03630d820ab1"
+  integrity sha512-OOOQ11ylW8GeFY85yM3HrprR5wZl1R1KsxrxNLMpE9l24zs+4yXAu4WsDESWcCAf5+PxvPNsLV9W/PB3J+XGMQ==
+
 "@types/babel__core@^7.1.0":
   version "7.1.2"
   resolved "https://registry.yarnpkg.com/@types/babel__core/-/babel__core-7.1.2.tgz#608c74f55928033fce18b99b213c16be4b3d114f"
