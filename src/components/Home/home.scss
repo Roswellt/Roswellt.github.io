@@ -139,7 +139,7 @@ $initialsXPos: -10%;
   }
 }
 
-@media (max-height: 650px), (max-width: 650px) {
+@media (max-height: 600px), (max-width: 480px) {
   .main {
     width: 100vw;
     height: 100vh;
@@ -168,7 +168,9 @@ $initialsXPos: -10%;
   }
 
   .contact-images {
-    width: 15%;
-    height: 15%;
+    width: 10%;
+    height: 10%;
+    max-width: 75px;
+    max-height: 75px;
   }
 }
