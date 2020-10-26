@@ -156,7 +156,7 @@ class Home extends Component {
         <div className="greeting">
           <h2>Hi! My name is</h2>
           <h2>Quang-Tri</h2>
-          <h4>Software Engineer from the University of Ottawa</h4>
+          <h4>Full-Time Software Engineer from Ottawa, ON</h4>
           <div className="contacts">
             <a href="mailto:qtrido@gmail.com"><img className="email contact-images" src={email} alt="email"></img></a>
             <a href={resumePdf}><img className="resume contact-images" src={resume} alt="resume"></img></a>
