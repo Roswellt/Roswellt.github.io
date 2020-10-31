@@ -5,7 +5,7 @@ import email from '../../assets/email-icon.svg';
 import github from '../../assets/github-icon.svg';
 import linkedin from '../../assets/linkedin-icon.svg';
 import resume from '../../assets/pdf-icon.svg';
-import resumePdf from '../../assets/Resume2019.pdf';
+import resumePdf from '../../assets/Resume.pdf';
 
 import './home.scss'
 
