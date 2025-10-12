@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.63e7e69c.css",
+    "main.js": "/static/js/main.eff44b50.js",
+    "static/media/QuangTri Resume.pdf": "/static/media/QuangTri Resume.43852a7841bde4dd33e3.pdf",
+    "index.html": "/index.html",
+    "static/media/github-icon.svg": "/static/media/github-icon.04be58c17b3d5e9744424d414240dd85.svg",
+    "static/media/pdf-icon.svg": "/static/media/pdf-icon.f590c3777e51939ee2651acd593652dc.svg",
+    "static/media/linkedin-icon.svg": "/static/media/linkedin-icon.27a3f479ca1bbb0ceef19e395081fb94.svg",
+    "static/media/email-icon.svg": "/static/media/email-icon.56058da1f2ed96c18f68b647b2a9fed8.svg",
+    "main.63e7e69c.css.map": "/static/css/main.63e7e69c.css.map",
+    "main.eff44b50.js.map": "/static/js/main.eff44b50.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63e7e69c.css",
+    "static/js/main.eff44b50.js"
+  ]
+}
